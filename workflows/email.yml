@@ -1,7 +1,7 @@
 name: Send email after webhook
 on:
   webhook:
-   
+jobs:  
  request:
     name: Request
     runs-on: ubuntu-latest
