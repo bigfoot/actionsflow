@@ -1,6 +1,6 @@
-name: Send email after webhook
 on:
   webhook:
+    method: post
 jobs:  
  request:
     name: Request
