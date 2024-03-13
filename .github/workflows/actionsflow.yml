@@ -1,12 +1,12 @@
 name: Actionsflow
 on:
    schedule:
-     - cron: "*/15 * * * *"
-  push:
+     - cron: "*/15 * * * *"     
+   push:
     branches:
       - main
-  repository_dispatch:
-  workflow_dispatch:
+   repository_dispatch:
+    workflow_dispatch:
     inputs:
       include:
         description: "--include: workflow file filter, you can use glob format to filter your workflows, the default value is empty value, means no filter will be using"
